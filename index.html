@@ -7,37 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Ohmyfood est une entreprise de commande de repas en ligne situe a Paris, France.composer leur propre menu.">
+    <!-- Fonts_awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/style.css">
-
+    <!-- Title -->
     <title>Ohmyfood</title>
 </head>
 
 <body class='page__body'>
+    <!-- Header_Section -->
     <header class="page-header">
         <!-- <h1 class="page-header__title">My Mobile-First App</h1> -->
         <div class="page__header-head">
-            <h1>ohmyfood</h1>
+            <h1 class='header-head-text'>ohmyfood</h1>
         </div>
-        <div class="page__header-location"><i></i>
+        <div class="page__header-location">
             <i class="fa-solid fa-location-dot"></i>
-            <p>Paris, Belleville</p>
+            <p class='header-location-text'>Paris, Belleville</p>
         </div>
     </header>
+    <!-- End Header_Section -->
+    <!-- Hero_Section -->
     <section class="page__hero">
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-        <div class="hero_btn">
-            <button class="hero__btn-button">Explorer nos restaurants</button>
+        <h2 class="hero-title">Réservez le menu qui vous convient</h2>
+        <p class='hero-Paragraph'>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+        <div class="hero_button">
+            <a class="hero_button-btn" href="#">Explorer nos restaurants</a>
         </div>
     </section>
+    <!-- End Hero_Section -->
+    <!-- Fonctionnement_Section -->
     <section class="page__fonctionnement">
         <h3>Fonctionnement</h3>
         <div class="fonctionnement__btn">
-            <button class="hero__btn-button"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
-                restaurant</button>
+            <div class="hero__btn-button1">
+                <div class="ellipse">1</div>
+                <button class="hero_button-btn" href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
+                    restaurant</button>
+            </div>
             <button class="hero__btn-button"><i class="fa-solid fa-list-ul"></i>Composez votre menu</button>
             <button class="hero__btn-button"><i class="fa-solid fa-store"></i>Dégustez au restaurant</button>
         </div>

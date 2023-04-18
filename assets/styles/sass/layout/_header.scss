@@ -1,0 +1,44 @@
+
+.page-header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: #FFFFFF;
+    color: #101010;
+}
+
+.header-head-text {
+    font-family: $font-family-cursive;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+}
+
+.page__header-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EAEAEA;
+    gap: 15px;
+    height: 50px;
+    width: 375px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 19px;
+    color: #353535;
+}
+
+.page__header-location-text {
+    font-family: $font-family-sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #353535;
+}
+
