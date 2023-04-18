@@ -12,15 +12,16 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Styles -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./assets/styles/style.css">
     <!-- Title -->
     <title>Ohmyfood</title>
 </head>
 
-<body class='page__body'>
+<body class='page'>
     <!-- Header_Section -->
     <header class="page-header">
-        <!-- <h1 class="page-header__title">My Mobile-First App</h1> -->
         <div class="page__header-head">
             <h1 class='header-head-text'>ohmyfood</h1>
         </div>
@@ -41,38 +42,76 @@
     <!-- End Hero_Section -->
     <!-- Fonctionnement_Section -->
     <section class="page__fonctionnement">
-        <h3>Fonctionnement</h3>
+        <h3 class='fonctionnement-title'>Fonctionnement</h3>
         <div class="fonctionnement__btn">
-            <div class="hero__btn-button1">
-                <div class="ellipse">1</div>
-                <button class="hero_button-btn" href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
+            <div class="fonctionnement__btn-button">
+                <div class="fonctionnement__btn-ellipse">1</div>
+                <button class="fonctionnement__btn-i" href="#"><i
+                        class="fa-solid fa-mobile-screen-button"></i>Choisissez un
                     restaurant</button>
             </div>
-            <button class="hero__btn-button"><i class="fa-solid fa-list-ul"></i>Composez votre menu</button>
-            <button class="hero__btn-button"><i class="fa-solid fa-store"></i>Dégustez au restaurant</button>
+            <div class="fonctionnement__btn-button">
+                <div class="fonctionnement__btn-ellipse">2</div>
+                <button class="fonctionnement__btn-i" href="#"><i class="fa-solid fa-list-ul"></i>Composez votre
+                    menu</button>
+            </div>
+            <div class="fonctionnement__btn-button">
+                <div class="fonctionnement__btn-ellipse">3</div>
+                <button class="fonctionnement__btn-i" href="#"><i class="fa-solid fa-store"></i>Dégustez au
+                    restaurant</button>
+            </div>
         </div>
     </section>
+    <!-- End Fonctionnement_Section -->
     <main class="page__main">
         <section class="restaurants-container">
             <div class="card">
                 <div class="card-image image--la-palette"></div>
-                <h4><b>La palette du goût</b></h4>
-                <p>Méni </p>
+                <div class="card-text">
+                    <div class="card-text--title">
+                        <h4><b>La palette du goût</b></h4>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div class="card-text--symbol">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <div class="card-image image--note-enchantee"></div>
-                <h4><b>La palette du goût</b></h4>
-                <p>Méni </p>
+                <div class="card-text">
+                    <div class="card-text--title">
+                        <h4><b>La note enchantée</b></h4>
+                        <p>Charonne</p>
+                    </div>
+                    <div class="card-text--symbol">
+                        <i class="fa-solid fa-heart" id='fa-heart--color'></i>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <div class="card-image image--a-la-francaise"></div>
-                <h4><b>La palette du goût</b></h4>
-                <p>Méni </p>
+                <div class="card-text">
+                    <div class="card-text--title">
+                        <h4><b>À la française</b></h4>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <div class="card-text--symbol">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <div class="card-image image--le-delice"></div>
-                <h4><b>La palette du goût</b></h4>
-                <p>Méni </p>
+                <div class="card-text">
+                    <div class="card-text--title">
+                        <h4><b>Le délice des sens</b></h4>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <div class="card-text--symbol">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

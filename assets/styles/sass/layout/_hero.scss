@@ -1,0 +1,31 @@
+ // Hero_Section  
+ .page__hero {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .hero-title {
+
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 28px;
+     text-align: center;
+    margin: 18px 0;
+ }
+
+ .hero-Paragraph {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 300;
+     font-size: 18px;
+     line-height: 21px;
+     text-align: center;
+ }
+   .hero__btn-button {
+       margin: 10px;
+   }
+ // End Hero_Section 

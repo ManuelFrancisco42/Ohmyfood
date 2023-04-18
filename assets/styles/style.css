@@ -6,6 +6,7 @@
 }
 
 .page {
+  background: #D2D2D2;
   display: grid;
   grid-template-areas: "header" "hero" "fonctionnement" "main" "footer";
   grid-template-rows: auto 1fr auto;
@@ -19,16 +20,17 @@
   justify-content: center;
 }
 .restaurants-container .card {
-  background: white;
-  width: 340px;
-  height: 251px;
+  background: #FFFFFF;
+  width: 346px;
+  height: 231px;
   margin: 10px;
-  border-radius: 25px 25px 0 0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .restaurants-container .card-image {
   height: 150px;
   margin-bottom: 15px;
-  border-radius: 25px 25px 0 0;
+  border-radius: 15px 15px 0 0;
   background-size: cover;
 }
 .restaurants-container .card-image.image--la-palette {
@@ -44,68 +46,94 @@
   background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg ");
 }
 
-/* Hero_Section */
-.page__hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-}
-
-.hero-Paragraph {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-}
-
 .page__fonctionnement {
+  height: 440px;
+  width: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 40px;
+  padding: 10px 20px 25px;
+  margin-bottom: 95px;
+  background: #F7F7F7;
 }
-
-.fonctionnement__btn {
+.page__fonctionnement .fonctionnement__btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 24px;
 }
-
-.hero__btn-button {
-  margin: 10px;
-}
-
-.hero__btn-button1 {
+.page__fonctionnement .fonctionnement__btn-button {
   position: relative;
 }
-.hero__btn-button1 .ellipse {
+.page__fonctionnement .fonctionnement__btn-button .fonctionnement__btn-ellipse {
   position: absolute;
-  padding-top: 3px;
+  padding-top: 8px;
   text-align: center;
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
+  margin-top: 25px;
   margin-left: -12px;
   border-radius: 50%;
   background: #9356DC;
 }
-
-.fa-mobile-screen-button {
-  padding-right: 5px;
+.page__fonctionnement .fonctionnement-title {
+  display: flex;
+  align-self: start;
+  margin-bottom: 15px;
+}
+.page__fonctionnement .fonctionnement__btn-i {
+  text-align: center;
+  border-radius: 20px;
+  background: #F7F7F7;
+  width: 332px;
+  height: 75px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  line-height: 19px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.page__fonctionnement .fonctionnement__btn-i i.fa-solid {
+  padding-right: 10px;
   padding-left: 13px;
+  font-size: 20px;
+  color: #7E7E7E;
+}
+.page__fonctionnement .fonctionnement__btn-i i.fa-solid.fa-store {
+  color: #9356DC;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-around;
+  gap: 101px;
+  margin: 15px 5px 15px 5px;
+}
+.card-text--symbol .fa-heart {
+  font-size: 22px;
+  color: #101010;
+}
+.card-text--symbol #fa-heart--color {
+  color: #9356DC;
+}
+
+.page__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px 25px;
+  gap: 16px;
+  width: 375px;
+  height: 186px;
+  background: #353535;
+  color: white;
+  margin-top: 45px;
 }
 
 body {
@@ -128,32 +156,44 @@ h6 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 0.75rem 1.5rem;
   background: #FFFFFF;
   color: #101010;
+}
+
+.page__header-head {
+  height: 63px;
+  width: 375px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 .header-head-text {
   font-family: "Shrikhand", cursive;
   font-style: italic;
   font-weight: 400;
+  text-align: center;
   font-size: 30px;
   line-height: 44px;
+  margin: 11px 0 11px 0;
 }
 
 .page__header-location {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background: #EAEAEA;
-  gap: 15px;
+  gap: 17px;
   height: 50px;
   width: 375px;
-  margin-top: 15px;
   text-align: center;
   font-weight: 500;
   line-height: 19px;
   color: #353535;
+}
+.page__header-location p {
+  display: flex;
 }
 
 .page__header-location-text {
@@ -163,6 +203,36 @@ h6 {
   font-size: 16px;
   line-height: 19px;
   color: #353535;
+}
+
+.page__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin: 18px 0;
+}
+
+.hero-Paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.hero__btn-button {
+  margin: 10px;
 }
 
 .hero_button {
@@ -177,7 +247,6 @@ h6 {
 }
 .hero_button .hero_button-btn {
   text-decoration: none;
-  color: white;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;

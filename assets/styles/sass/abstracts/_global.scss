@@ -5,6 +5,7 @@
 }
 
 .page {
+    background: #D2D2D2;
     display: grid;
     grid-template-areas:
         'header'
@@ -15,6 +16,7 @@
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
+
 .restaurants-container {
     .restaurants-container {
         @include flex(column, center);
@@ -22,16 +24,18 @@
 
 
     .card {
-        background: white;
-        width: 340px;
-        height: 251px;
+        background: #FFFFFF;
+        width: 346px;
+        height: 231px;
         margin: 10px;
-        border-radius: 25px 25px 0 0;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
 
         &-image {
             height: 150px;
             margin-bottom: 15px;
-            border-radius: 25px 25px 0 0;
+            border-radius: 15px 15px 0 0;
             background-size: cover;
 
             &.image--la-palette {
@@ -52,67 +56,111 @@
         }
     }
 }
- /* Hero_Section */
-.page__hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
- .hero-title {
-    
-     font-family: 'Roboto';
-     font-style: normal;
-     font-weight: 700;
-     font-size: 24px;
-     line-height: 28px;
-     text-align: center;
- }
 
- .hero-Paragraph {
-     font-family: 'Roboto';
-     font-style: normal;
-     font-weight: 300;
-     font-size: 18px;
-     line-height: 21px;
-     text-align: center;
- }
-// End Hero_Section 
 
 //Fonctionnement_Section 
 .page__fonctionnement {
+    height: 440px;
+    width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 48px;
-}
+    margin-top: 40px;
+    padding: 10px 20px 25px;
+    margin-bottom: 95px;
+    background: #F7F7F7;
 
-.fonctionnement__btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .fonctionnement__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
 
-.hero__btn-button {
-    margin: 10px;
-}
-.hero__btn-button1 {
-   position: relative;
-.ellipse {
-        position: absolute;
-        padding-top: 3px;
+        &-button {
+            position: relative;
+
+            .fonctionnement__btn-ellipse {
+                position: absolute;
+                padding-top: 8px;
+                text-align: center;
+                width: 35px;
+                height: 35px;
+                margin-top: 25px;
+                margin-left: -12px;
+                border-radius: 50%;
+                background: #9356DC;
+            }
+        }
+    }
+
+    .fonctionnement-title {
+        display: flex;
+        align-self: start;
+        margin-bottom: 15px;
+    }
+
+    .fonctionnement__btn-i {
         text-align: center;
-        width: 24px;
-        height: 24px;
-        margin-left: -12px;
-        border-radius: 50%;
-        background: #9356DC;
+        border-radius: 20px;
+        background: #F7F7F7;
+        width: 332px;
+        height: 75px;
+        border: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        line-height: 19px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+        i.fa-solid {
+            padding-right: 10px;
+            padding-left: 13px;
+            font-size: 20px;
+            color: #7E7E7E;
+
+            &.fa-store {
+                color: #9356DC;
+                ;
+            }
+        }
+    }
+
+
+}
+
+
+
+.card-text {
+    display: flex;
+    justify-content: space-around;
+    gap: 101px;
+    margin: 15px 5px 15px 5px;
+
+    &--symbol {
+        .fa-heart {
+            font-size: 22px;
+            color: #101010;
+        }
+
+        #fa-heart--color {
+            color: #9356DC;
+        }
     }
 }
-.fa-mobile-screen-button{
-    padding-right: 5px;
-    padding-left: 13px;
+
+.page__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 25px;
+    gap: 16px;
+    width: 375px;
+    height: 186px;
+    background: #353535;
+    color: white;
+    margin-top:45px;
 }
-// End Fonctionnement_Section 
